@@ -3,7 +3,11 @@ font-family: helvetica;
 }
 body {
     background-image: url('3257640.jpg');
- /* background: linear-gradient(to right, #791b91, #000000); */
+  background-repeat: no-repeat; 
+  background-size:auto; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-color: #330857;
 }
 .imgFace {
   width: 370px;
