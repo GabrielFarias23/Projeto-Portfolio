@@ -6,19 +6,24 @@ body {
  /* background: linear-gradient(to right, #791b91, #000000); */
 }
 .imgFace {
-  width: 250px;
-  width: 252px;
-  margin-top: 2px;
-  margin-left: 1100px;
-  border-radius: 125px;
+  width: 370px;
+  width: 370px;
+  margin-top: 5px;
+   position: relative;
+   top: 80px;
+  margin-left: 980px;
+  border-radius: 185px;
   border-color: #fff; 
   box-shadow: 0 0 5px #fff, 0 0 10px #ffffff, 0 0 15px #f8f8f8; 
+    max-width: 100%;
+  height: auto;
 }
 .inicio {
   margin-top: 100px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-
+   flex-direction: column;  /* menu vertical */
+    align-items: center;     /* centraliza os links */
 }
 .nav {
   margin: 25px 25px;
@@ -82,4 +87,23 @@ p {
 .links {
     gap: 20px;  
     color: blue; 
+}
+.class_links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  margin-left: 975px;
+  position: relative;
+  top: 20px;
+}
+.title {
+  color: aliceblue;
+  margin: 1000;
+  padding: 0;
+  position: relative;
+  top: 170px;
+  left: 40px;
+  font-size: 30px;
 }
