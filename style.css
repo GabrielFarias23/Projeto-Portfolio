@@ -8,7 +8,7 @@ body{
 .face {
   text-align: center;
   width: 15%;
-  height: auto;
+  height: 280px;
   display: flex;
   margin: 70px auto;
   border-radius: 50%; 
@@ -54,3 +54,37 @@ a:hover {
   top: 7px;
 }
 
+@media (max-width: 768px) {
+body {
+    font-size: 14px;
+    background-color: black;
+  }
+
+  .face {
+    width: 45%;
+    height: auto;
+  }
+
+  .mom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Responsivo para celulares (até 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    background-color: black;
+  }
+
+  .face {
+    width: 45%;
+    height: auto;
+  }
+
+  .mom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
