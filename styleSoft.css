@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+* {
+    background-color: black;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: white;
+}
+.title {
+    font-family: sans-serif;
+}
+
+.listas ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;          /* permite quebra de linha */
+  justify-content: space-between;
+  max-width: 800px;         /* controla a largura da lista */
+  margin: 0 auto;           /* centraliza a lista */
+}
+.listas li {
+  width: 48%;               /* cada item ocupa metade da largura */
+  margin-bottom: 20px;      /* espaçamento vertical */
+  border: solid rgb(4, 202, 186);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+h1 {
+  text-align: center;
+  
+}
+
+h2 {
+    font-weight: normal;
+
+}
+
+.listas h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+
+.listas p {
+  font-size: 16px;
+  color: rgb(2, 255, 234);
+}
+.listas li:hover {
+    border: solid red;
+    color: red;
+}
+.listas li:hover * {
+    color: red; 
+}
+
+@media (max-width: 480px) {
+  .listas li {
+    width: 100%;
+  }
+}

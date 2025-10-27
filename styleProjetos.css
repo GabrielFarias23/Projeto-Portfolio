@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+  
+  * {
+    background-color: black;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: white;
+  }
+  :root{
+    --bg: #0f1724;
+    --text: #e6eef8;
+    --accent: #ffffff;
+  }
+  html,body{
+    height:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .wrap{
+    text-align:center;
+    padding:24px;
+    max-width:90%;
+  }
+
+  .line {
+    font-size:clamp(18px, 4vw, 34px);
+    letter-spacing:0.04em;
+    display:inline-block;
+    white-space:nowrap;
+    overflow:hidden;                /* esconde o texto "não digitado" */
+    border-right: .12em solid transparent;
+    box-sizing: content-box;
+    
+  }
+
+  /* animação "digitando" */
+  .type {
+    width: 50ch; /* ajuste conforme o comprimento do texto */
+    animation:
+      typing 10s steps(40,end) infinite,
+      blink-cursor .7s step-end infinite;
+  }
+
+  @keyframes typing {
+    0%   { width: 0ch }
+    50%  { width: 40ch }  /* vai até o texto completo */
+    60%  { width: 40ch }  /* pausa com texto completo */
+  }
+
+  @keyframes blink-cursor {
+    50% { border-right-color: rgba(255,255,255,0.0) }
+    100% { border-right-color: var(--accent) }
+  }
+
+  .sub {
+    display:block;
+    margin-top:12px;
+    font-size:clamp(12px,2.2vw,16px);
+    color: #ffffff;
+  }
