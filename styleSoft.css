@@ -21,7 +21,7 @@
 .listas li {
   width: 48%;               /* cada item ocupa metade da largura */
   margin-bottom: 20px;      /* espaçamento vertical */
-  border: solid rgb(4, 202, 186);
+  border: 1px solid rgb(7, 48, 39);
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
@@ -51,11 +51,11 @@ h2 {
   color: rgb(2, 255, 234);
 }
 .listas li:hover {
-    border: solid red;
-    color: red;
+    border: solid rgb(177, 37, 219);
+    color: rgb(177, 37, 219);
 }
 .listas li:hover * {
-    color: red; 
+    color: rgb(177, 37, 219); 
 }
 
 @media (max-width: 480px) {
